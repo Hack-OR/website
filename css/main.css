@@ -3,7 +3,7 @@ html {
 }
 
 html, body {
-    background-color: #121212;
+    background: #121212;
     height:100%;
 }
 
@@ -11,7 +11,15 @@ p {
     color: lightgray;
 }
 
-#signUp a {
+#nav a {
+    font-size: 1.25em;
+}
+
+#about, #info, #faq p {
+    font-size: 1.25em;
+}
+
+.btn-primary, .btn-primary a {
     color: black;
     font-size: 1.25em;
 }
