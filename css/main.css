@@ -1,0 +1,50 @@
+.arrow {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
+
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #026295;
+    border-right: 5px solid darkslategray;
+    transform: rotate(45deg);
+    margin: -20px;
+    animation: animate 3s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    background-color: #121212;
+}
+
+p {
+    color: lightgray;
+}
