@@ -1,3 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    background-color: #121212;
+    height:100%;
+}
+
+p {
+    color: lightgray;
+}
+
+#signUp a {
+    color: black;
+    font-size: 1.25em;
+}
+
+#darken {
+    background: #121212;
+}
+
 .arrow {
     position: absolute;
     bottom: 10%;
@@ -8,8 +30,8 @@
     display: block;
     width: 30px;
     height: 30px;
-    border-bottom: 5px solid #026295;
-    border-right: 5px solid darkslategray;
+    border-bottom: 5px solid lightgray;
+    border-right: 5px solid limegreen;
     transform: rotate(45deg);
     margin: -20px;
     animation: animate 3s infinite;
@@ -35,16 +57,4 @@
         opacity: 0;
         transform: rotate(45deg) translate(20px,20px);
     }
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-html, body {
-    background-color: #121212;
-}
-
-p {
-    color: lightgray;
 }
