@@ -3,10 +3,14 @@ html {
 }
 
 html, body {
-    background: #f8f8ff;
+    background: #fffffa;
     height:100%;
 }
 
+h4 {
+    color: #4e4e4e;
+    text-align: center;
+}
 #info, #schedule, #categories, #faq, #sponsors {
     margin-bottom: 5em;
 }
@@ -16,8 +20,8 @@ html, body {
     font-weight: bold;
 }
 
-.nav-link, .navbar-brand, .btn {
-    font-family: 'Fugaz One';
+a:hover {
+    color: #63bf63;
 }
 
 #about, #info, #faq p {
@@ -25,8 +29,15 @@ html, body {
 }
 
 .btn-primary, .btn-primary a {
-    color: #121212;
+    color: #f8f8ff;
     font-size: 1.25em;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #63bf63;
+    font-size: 1.25em;
+    border: none;
 }
 
 .card-header {
