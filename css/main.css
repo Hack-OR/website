@@ -3,16 +3,21 @@ html {
 }
 
 html, body {
-    background: #121212;
+    background: #f8f8ff;
     height:100%;
 }
 
-p {
-    color: lightgray;
+#info, #schedule, #categories, #faq, #sponsors {
+    margin-bottom: 5em;
 }
 
 #nav a {
     font-size: 1.25em;
+    font-weight: bold;
+}
+
+.nav-link, .navbar-brand, .btn {
+    font-family: 'Fugaz One';
 }
 
 #about, #info, #faq p {
@@ -20,12 +25,12 @@ p {
 }
 
 .btn-primary, .btn-primary a {
-    color: black;
+    color: #121212;
     font-size: 1.25em;
 }
 
-#darken {
-    background: #121212;
+.card-header {
+    background: #f8f8ff;
 }
 
 .arrow {
@@ -38,8 +43,8 @@ p {
     display: block;
     width: 30px;
     height: 30px;
-    border-bottom: 5px solid lightgray;
-    border-right: 5px solid limegreen;
+    border-bottom: 5px solid black;
+    border-right: 5px solid #63BF63;
     transform: rotate(45deg);
     margin: -20px;
     animation: animate 3s infinite;

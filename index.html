@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/theme.css" title="style">
     <link rel="stylesheet" type="text/css" href="css/main.css" title="style">
+    <script src="https://kit.fontawesome.com/e0248772ad.js" crossorigin="anonymous"></script>
 
     <script type="application/ld+json">
       {
@@ -26,70 +27,92 @@
   </head>
 
   <body>
-    <div id="nav" class="container">
-      <div class="row justify-content-center">
-        <ul class="nav justify-content-center">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Sign up</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sponsors">Sponsors</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+    <nav id="nav" class="navbar fixed-top navbar-expand-md bg-light">
+      <a href="#" class="navbar-brand">HackOR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#121212"></i></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#faq">FAQ</a>
+          <a class="nav-link" href="#faq">SCHEDULE</a>
+          <a class="nav-link" href="#">REGISTER</a>
+          <a class="nav-link" href="#sponsors">SPONSORS</a>
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </div>
       </div>
-    </div>
+    </nav>
     <div id="about" class="container h-100">
       <div class="row h-100">
         <div class="col-8 align-self-center">
-          <h1 class="text-light">About HackOR</h1>
-          <h1 class="text-light">February 13 - 15, 2021</h1>
+          <h1>March 19 - 21, 2021</h1>
           <p>
-            HackOR is Oregon’s premier virtual hackathon by students and inclusive for all students. We are expecting 200+ participants and aim to bring out the best and brightest students, not just from Oregon but from all over the United States, Europe, and Canada.
+            <b>HackOR</b> is a <i>48 hour hackathon</i> where programmers gather to collaborate on a project—organized and chaired by major schools in Oregon. Partnering with Major League Hacking (MLH) and going virtual amidst the pandemic, HackOR aims to bring the best and brightest students in tech together to enjoy a virtual weekend of hacking, workshops, tech talks, networking and other fun activities.
           </p>
-          <button id="signUp" type="button" class="btn btn-primary"><a href="#"><b>REGISTER HERE</b></a></button>
+          <button id="signUp" type="button" class="btn btn-primary"><a href="#">REGISTRATION OPENS FEB 1</a></button>
         </div>
         <div class="col-4 align-self-center">
           <a href="index.html"><img class="img-fluid" src="images/hackOR.png" alt="hackOR Logo"></a>
         </div>
       </div>
     </div>
-    <div id="info" class="container h-50">
-      <div class="row h-50">
-        <div class="col-12">
-          <h1 class="text-light">What's a hackathon?</h1>
-          <p>
+    <div id="info" class="container">
+      <div class="row">
+        <div class="col">
+          <h1>What's a hackathon?</h1>
+          <p style="margin-left: 3em; margin-right: 3em;">
             A hackathon is a project-based coding competition over the span of a few days. During the competition, participants team up in groups of four to create a tech solution for social impact, which is then presented to a set of judges. There are also workshops throughout the hackathon to build skills and network.
           </p>
         </div>
       </div>
+      <div class="row">
+        <div class="col">
+          <h1>How do I get started?</h1>
+          <div style="margin-left: 3em; margin-right: 3em;">
+            <p>As a virtual event, HackOR is open to any students enrolled in school in the United States. There are two ways to participate in HackOR:</p>
+            <ul>
+              <li><b>Hackathon Participants:</b> accessible to students over the age of 14. Hackathon Participants form teams of 4 and work on projects for the competition, with access to workshops, events, and mentors.</li>
+              <li><b>Emerging Attendee:</b> offered to younger students down to middle school and for beginners who are interested in learning programming and related skills. Emerging attendees have access to attending workshops, events, and browsing hackathon projects.</li>
+            </ul>
+            <p>Applications for both open from February 1st to February 28th and are admitted on a rolling basis. Once admitted, we will send you more information on the event.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="schedule" class="container h-50">
-      <div class="row h-50">
-        <div class="col-6">
-          <h1 class="text-light">Schedule (times in PST) - WIP</h1>
-          <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#friday" role="button" aria-expanded="false" aria-controls="friday"><b>FRIDAY</b></a>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#saturday" aria-expanded="false" aria-controls="saturday"><b>SATURDAY</b></button>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#sunday" aria-expanded="false" aria-controls="sunday"><b>SUNDAY</b></button>
-          </p>
+    <div id="schedule" class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Schedule (times in PST) - WIP</h1>
+          <div class="row">
+            <div class="col">
+              <a class="btn btn-primary btn-block" data-toggle="collapse" href="#friday" role="button" aria-expanded="false" aria-controls="friday">FRIDAY</a>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#saturday" aria-expanded="false" aria-controls="saturday">SATURDAY</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#sunday" aria-expanded="false" aria-controls="sunday">SUNDAY</button>
+            </div>
+          </div>
           <div class="row">
             <div class="col">
               <div class="collapse multi-collapse" id="friday">
                 <div class="card card-body">
-                  8:00 AM - WIP
+                  Coming soon!
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="collapse multi-collapse" id="saturday">
                 <div class="card card-body">
-                  8:00 AM - WIP
+                  Coming soon!
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="collapse multi-collapse" id="sunday">
                 <div class="card card-body">
-                  8:00 AM - WIP
+                  Coming soon!
                 </div>
               </div>
             </div>
@@ -97,129 +120,155 @@
         </div>
       </div>
     </div>
-    <div id="track" class="container h-50">
-      <div class="row h-50">
-        <div class="col-6">
-          <h1 class="text-light">Beginner Track</h1>
-          <p>
-            For noobs
-          </p>
-        </div>
-        <div class="col-6">
-          <h1 class="text-light">Advanced Track</h1>
-          <p>
-            For nerds
-          </p>
-        </div>
-      </div>
-    </div>
-    <div id="faq" class="container h-50">
+    <div id="faq" class="container">
       <div class="row">
         <div class="col-6">
-          <h1 class="text-light">FAQ</h1>
+          <h1>FAQs</h1>
         </div>
         <div class="col-6">
           <p><b>Got other questions?</b> Email <a href="mailto:contact.hackor@gmail.com">contact.hackor@gmail.com</a></p>
         </div>
       </div>
-      <div class="row h-50">
+      <div class="row">
         <div id="accordion">
-          <div id="darken" class="card text-white">
+          <div id="lighten" class="card">
             <div class="card-header" id="headingOne">
               <h5 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Question #1
+                  How long is HackOR?
                 </button>
               </h5>
             </div>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
-                answer
+                HackOR is held from Friday, March 19th to Sunday, March 19th. Students hack for 48 hours!
               </div>
             </div>
           </div>
-          <div id="darken" class="card text-white">
+          <div id="lighten" class="card">
             <div class="card-header" id="headingTwo">
               <h5 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Question #2
+                  When do HackOR applications open?
                 </button>
               </h5>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
               <div class="card-body">
-                answer
+                HackOR applications open from February 1st to February 28th.
               </div>
             </div>
           </div>
-          <div id="darken" class="card text-white">
+          <div id="lighten" class="card">
             <div class="card-header" id="headingThree">
               <h5 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Question #3
+                  Does it cost anything to attend HackOR?
                 </button>
               </h5>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
               <div class="card-body">
-                answer
+                HackOR will be opened up as a virtual event, accessible to attendees from across the nation.
+              </div>
+            </div>
+          </div>
+          <div id="lighten" class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  I'm new to hackathons and tech, can I still attend?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                Yes! HackOR and hackathons overall are very <a href="https://medium.com/tfogo/hackathons-are-for-beginners-77a9c9c0e000">beginner friendly</a>. We strongly encourage anyone interested in tech to join: it’ll be fun and a great experience :D
+              </div>
+            </div>
+          </div>
+          <div id="lighten" class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  How many members in a team?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                Teams are limited to 4 members. That being said, you don't have to have 4 members to compete.
+              </div>
+            </div>
+          </div>
+          <div id="lighten" class="card">
+            <div class="card-header" id="headingSix">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  How do I find a team?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+              <div class="card-body">
+                You can either form a team before HackOR or during the event. We will have plenty of team-formation opportunities the week before HackOR and before hacking starts. We also have a “register as a team” option if you already have a team in mind.
+              </div>
+            </div>
+          </div>
+          <div id="lighten" class="card">
+            <div class="card-header" id="headingSeven">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  How can I stay connected in a virtual hackathon?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+              <div class="card-body">
+                We will have dedicated activities and socializing throughout the event via Zoom and GatherTown, as well as Discord channels. The HackOR team is also working hard to prepare lots of fun events, workshops, and so on!
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="sponsors" class="container">
-      <div class="row"><h1 class="text-light">Generously Sponsored by:</h1></div>
-      <div class="row"><h1 class="text-light">PLATINUM</h1></div>
+    <!-- <div id="sponsors" class="container">
+      <div class="row"><h1>Generously Sponsored by:</h1></div>
+      <div class="row"><h1>PLATINUM</h1></div>
       <div style="margin-bottom: 2em;" class="row">
         <div class="col-3"><a href="#"><img class="img-fluid" src="images/placeholder.png" alt="placeholder"></a></div>
         <div class="col-3"><a href="#"><img class="img-fluid" src="images/placeholder.png" alt="placeholder"></a></div>
         <div class="col-3"><a href="#"><img class="img-fluid" src="images/placeholder.png" alt="placeholder"></a></div>
       </div>
-      <div class="row"><h1 class="text-light">GOLD</h1></div>
+      <div class="row"><h1>GOLD</h1></div>
       <div style="margin-bottom: 2em;" class="row">
         <div class="col-3"><a href="#"><img class="img-fluid" src="images/placeholder.png" alt="placeholder"></a></div>
         <div class="col-3"><a href="#"><img class="img-fluid" src="images/placeholder.png" alt="placeholder"></a></div>
         <div class="col-3"><a href="#"><img class="img-fluid" src="images/placeholder.png" alt="placeholder"></a></div>
       </div>
-      <div class="row"><h1 class="text-light">SILVER</h1></div>
+      <div class="row"><h1>SILVER</h1></div>
       <div style="margin-bottom: 2em;" class="row">
         <div class="col-3"><a href="#"><img class="img-fluid" src="images/placeholder.png" alt="placeholder"></a></div>
         <div class="col-3"><a href="#"><img class="img-fluid" src="images/placeholder.png" alt="placeholder"></a></div>
         <div class="col-3"><a href="#"><img class="img-fluid" src="images/placeholder.png" alt="placeholder"></a></div>
       </div>
-    </div>
+    </div> -->
     <div class="arrow">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <footer class="d-flex justify-content-center mt-auto">
-      <div id="contact" class="d-flex justify-content-between col-md-8 col-md-offset-2 mb-3 mt-5">
-        <div class="align-left">
-          <p class="font-weight-bold">Important Links</p>
-          <div class="btn-group dropup">
-            <btn class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HackOR Team</btn>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">link</a>
-            </div>
-          </div>
-          <div class="btn-group dropup">
-            <btn class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social Media</btn>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">link</a>
-            </div>
-          </div>
-          <div class="btn-group dropup">
-            <btn class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MLH Code of Conduct</btn>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">link</a>
-            </div>
-          </div>
-        </div>
+    <div class="container">
+      <br>
+      <div class="text-center center-block">
+        <p>- © 2020 HackOR - <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a> -</p>
+        <br>
+        <a href="https://www.instagram.com/thehackor"><i class="fab fa-instagram-square fa-3x social"></i></a>
+        <a href="https://www.discord.com/thehackor"><i class="fab fa-discord fa-3x social"></i></a>
+        <a href="mailto:contact.hackor@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
       </div>
-    </footer>
+      <br>
+      </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
