@@ -3,7 +3,7 @@ html {
 }
 
 html, body {
-    background: #fffffa;
+    background: #fafafa;
     height:100%;
 }
 
@@ -11,6 +11,7 @@ h4 {
     color: #4e4e4e;
     text-align: center;
 }
+
 #info, #schedule, #categories, #faq, #sponsors {
     margin-bottom: 5em;
 }
@@ -31,7 +32,6 @@ a:hover {
 #sponsorButton:hover {
     background-color: #3e973e;
 }
-
 
 #about, #info, #faq p {
     font-size: 1.25em;
