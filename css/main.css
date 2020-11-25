@@ -24,6 +24,15 @@ a:hover {
     color: #63bf63;
 }
 
+#sponsorButton {
+    background-color: #63bf63;
+}
+
+#sponsorButton:hover {
+    background-color: #3e973e;
+}
+
+
 #about, #info, #faq p {
     font-size: 1.25em;
 }
