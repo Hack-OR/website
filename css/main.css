@@ -64,7 +64,7 @@ a:hover {
     width: 30px;
     height: 30px;
     border-bottom: 5px solid black;
-    border-right: 5px solid #63BF63;
+    border-right: 5px solid darkslategray;
     transform: rotate(45deg);
     margin: -20px;
     animation: animate 3s infinite;
