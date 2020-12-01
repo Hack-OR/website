@@ -24,9 +24,30 @@ h4 {
     margin-bottom: 5em;
 }
 
+#nav {
+    background-color: rgba(15, 181, 148,0.95);
+    padding: 0;
+}
+
 #nav a {
+    color: #f8f8ff;
+    padding: 5px 20px;
+    margin: 0;
     font-size: 1.25em;
     font-weight: bold;
+}
+
+#nav a:hover {
+    color: #0fb595;
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    color: #f8f8ff;
+}
+
+.navbar-brand:hover {
+    color: #c6f8c6;
 }
 
 a:hover {
