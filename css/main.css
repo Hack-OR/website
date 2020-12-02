@@ -55,6 +55,7 @@ a:hover {
 }
 
 #dropdownMenuButton {
+
 }
 
 #sponsorButton {
@@ -79,6 +80,16 @@ a:hover {
     background-color: #63bf63;
     font-size: 1.25em;
     border: none;
+}
+
+#schedule-accordion .card-header {
+    background: #0FB595;
+}
+
+#schedule-accordion .card-header button {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .card-header {

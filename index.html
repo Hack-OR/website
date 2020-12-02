@@ -122,56 +122,61 @@
               <h1>Schedule</h1>
             </div>
             <div class="col my-auto">
-              <button 
-              class="btn btn-outline-primary dropdown-toggle float-right my-auto"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <span id="timezone">Pacific Daylight Time</span>
-            </button>
-            <div 
-              class="dropdown-menu"
-              aria-labelledby="dropdownMenuButton"
-            >
-              <a class="dropdown-item">Pacific Daylight Time (GMT -07:00)</a>
-              <a class="dropdown-item">Central Daylight Time (GMT -05:00)</a>
-              <a class="dropdown-item">Eastern Daylight Time (GMT -04:00)</a>
-            </div>
+              <button class="btn btn-outline-primary dropdown-toggle float-right my-auto" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span id="timezone">Pacific Daylight Time</span></button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item">Pacific Daylight Time (GMT -07:00)</a>
+                <a class="dropdown-item">Central Daylight Time (GMT -05:00)</a>
+                <a class="dropdown-item">Eastern Daylight Time (GMT -04:00)</a>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md">
-              <a class="btn btn-primary btn-block" data-toggle="collapse" href="#friday" role="button" aria-expanded="false" aria-controls="friday">FRIDAY</a>
-            </div>
-            <div class="col-md">
-              <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#saturday" aria-expanded="false" aria-controls="saturday">SATURDAY</button>
-            </div>
-            <div class="col-sm">
-              <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#sunday" aria-expanded="false" aria-controls="sunday">SUNDAY</button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md">
-              <div class="collapse multi-collapse" id="friday">
-                <div class="card card-body">
-                  Coming soon!
+          <div class="row" id="schedule-accordion">
+            <div class="col-lg">
+              <div class="card">
+                <div class="card-header" id="friday">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#fridayCollapse" aria-expanded="false" aria-controls="fridayCollapse">
+                      FRIDAY
+                    </button>
+                  </h5>
+                </div>
+                <div id="fridayCollapse" class="collapse" aria-labelledby="friday" data-parent="#schedule-accordion">
+                  <div class="card-body">
+                    Coming Soon!
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md">
-              <div class="collapse multi-collapse" id="saturday">
-                <div class="card card-body">
-                  Coming soon!
+            <div class="col-lg">
+              <div class="card">
+                <div class="card-header" id="saturday">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#saturdayCollapse" aria-expanded="false" aria-controls="saturdayCollapse">
+                      SATURDAY
+                    </button>
+                  </h5>
+                </div>
+                <div id="saturdayCollapse" class="collapse" aria-labelledby="saturday" data-parent="#schedule-accordion">
+                  <div class="card-body">
+                    Coming Soon!
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md">
-              <div class="collapse multi-collapse" id="sunday">
-                <div class="card card-body">
-                  Coming soon!
+            <div class="col-lg">
+              <div class="card">
+                <div class="card-header" id="sunday">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#sundayCollapse" aria-expanded="false" aria-controls="sundayCollapse">
+                      SUNDAY
+                    </button>
+                  </h5>
+                </div>
+                <div id="sundayCollapse" class="collapse" aria-labelledby="sunday" data-parent="#schedule-accordion">
+                  <div class="card-body">
+                    Coming Soon!
+                  </div>
                 </div>
               </div>
             </div>
