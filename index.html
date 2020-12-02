@@ -55,9 +55,6 @@
                 <h1 class="text-left d-none d-md-block">Oregon’s Premier All-Student Hackathon</h1>
                 <h1 class="text-center d-md-none">Oregon’s Premier All-Student Hackathon</h1>
                 <br>
-                <p>
-                  <b>HackOR</b> is a <i>48 hour hackathon</i> where programmers gather to collaborate on a project—organized and chaired by major schools in Oregon. Partnering with Major League Hacking (MLH) and going virtual amidst the pandemic, HackOR aims to bring the best and brightest students in tech together to enjoy a virtual weekend of hacking, workshops, tech talks, networking and other fun activities.
-                </p>
                 <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Registration coming in February!">
                   <button class="btn btn-primary" type="button">
                     <!--<a>Register Now</a>-->
@@ -78,12 +75,22 @@
     <div id="info" class="container">
       <div class="row">
         <div class="col m-3">
+          <h1>About HackOR</h1>
+          <p>
+            <b>HackOR</b> is a <i>48 hour hackathon</i> where programmers gather to collaborate on a project—organized and chaired by major schools in Oregon. Partnering with Major League Hacking (MLH) and going virtual amidst the pandemic, HackOR aims to bring the best and brightest students in tech together to enjoy a virtual weekend of hacking, workshops, tech talks, networking and other fun activities.
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col m-3">
           <h1>What's a hackathon?</h1>
           <p>
             A hackathon is a project-based coding competition over the span of a few days. During the competition, participants team up in groups of four to create a tech solution for social impact, which is then presented to a set of judges. There are also workshops throughout the hackathon to build skills and network.
           </p>
         </div>
       </div>
+      <br>
       <div class="row">
         <div class="col m-3">
           <h1>How do I get started?</h1>
@@ -110,7 +117,27 @@
     <div id="schedule" class="container">
       <div class="row">
         <div class="col m-3">
-          <h1>Schedule (times in PST)</h1>
+          <h1>
+            Schedule
+            <button 
+              class="btn btn-outline-primary dropdown-toggle float-right"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span id="timezone">Pacific Daylight Time (GMT -07:00)</span>
+            </button>
+            <div 
+              class="dropdown-menu"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <a class="dropdown-item">Pacific Daylight Time (GMT -07:00)</a>
+              <a class="dropdown-item">Central Daylight Time (GMT -05:00)</a>
+              <a class="dropdown-item">Eastern Daylight Time (GMT -04:00) </a>
+            </div>
+          </h1>
           <div class="row">
             <div class="col-md">
               <a class="btn btn-primary btn-block" data-toggle="collapse" href="#friday" role="button" aria-expanded="false" aria-controls="friday">FRIDAY</a>
@@ -151,7 +178,7 @@
     <div id="faq" class="container">
       <div class="row">
         <div class="col-6 m-3">
-          <h1>FAQs</h1>
+          <h1>Frequently Asked Questions</h1>
         </div>
       </div>
       <div class="row">
@@ -316,6 +343,10 @@
     <script>
       $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
+        $('.dropdown-menu a').click(function(){
+          console.log($(this).text());
+          $('#timezone').text($(this).text());
+        });
       });
     </script>
 </html>
