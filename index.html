@@ -117,17 +117,20 @@
     <div id="schedule" class="container">
       <div class="row">
         <div class="col m-3">
-          <h1>
-            Schedule
-            <button 
-              class="btn btn-outline-primary dropdown-toggle float-right"
+          <div class="row">
+            <div class="col my-auto">
+              <h1>Schedule</h1>
+            </div>
+            <div class="col my-auto">
+              <button 
+              class="btn btn-outline-primary dropdown-toggle float-right my-auto"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <span id="timezone">Pacific Daylight Time (GMT -07:00)</span>
+              <span id="timezone">Pacific Daylight Time</span>
             </button>
             <div 
               class="dropdown-menu"
@@ -135,9 +138,10 @@
             >
               <a class="dropdown-item">Pacific Daylight Time (GMT -07:00)</a>
               <a class="dropdown-item">Central Daylight Time (GMT -05:00)</a>
-              <a class="dropdown-item">Eastern Daylight Time (GMT -04:00) </a>
+              <a class="dropdown-item">Eastern Daylight Time (GMT -04:00)</a>
             </div>
-          </h1>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md">
               <a class="btn btn-primary btn-block" data-toggle="collapse" href="#friday" role="button" aria-expanded="false" aria-controls="friday">FRIDAY</a>
@@ -177,7 +181,7 @@
     </div>
     <div id="faq" class="container">
       <div class="row">
-        <div class="col-6 m-3">
+        <div class="col m-3">
           <h1>Frequently Asked Questions</h1>
         </div>
       </div>
@@ -345,7 +349,21 @@
         $('[data-toggle="tooltip"]').tooltip();
         $('.dropdown-menu a').click(function(){
           console.log($(this).text());
-          $('#timezone').text($(this).text());
+          let display;
+          switch($(this).text()) {
+            case "Pacific Daylight Time (GMT -07:00)":
+              display = "Pacific Daylight Time";
+              break;
+            case "Central Daylight Time (GMT -05:00)":
+              display = "Central Daylight Time";
+              break;
+            case "Eastern Daylight Time (GMT -04:00)":
+              display = "Eastern Daylight Time";
+              break;
+            default: 
+              display = "Select Timezone";
+          }
+          $('#timezone').text(display);
         });
       });
     </script>
