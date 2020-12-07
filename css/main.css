@@ -54,8 +54,45 @@ a:hover {
     color: #63bf63;
 }
 
-#dropdownMenuButton {
+.fieldset {
+    border: 2px solid;
+    border-top: none;
+    border-color: #0fb595;
+    padding: 0.5em;
+    margin: 0em 2px;
+}
 
+.fieldset>h1 {
+    font: 1em normal;
+    margin: -1em -0.5em 0;
+    font-family: "Poppins", Helvetica, sans-serif;
+    color: #0fb595;
+}
+
+.fieldset>h1>span {
+    float: left;
+}
+
+.fieldset>h1:before {
+    border-top: 2px solid;
+    border-color: #0fb595;
+    content: ' ';
+    float: left;
+    margin: 0.5em 2px 0 -1px;
+    width: 0.75em;
+}
+
+.fieldset>h1:after {
+    border-top: 2px solid;
+    border-color: #0fb595;
+    content: ' ';
+    display: block;
+    height: 1.5em;
+    left: 2px;
+    margin: 0 1px 0 0;
+    overflow: hidden;
+    position: relative;
+    top: 0.5em;
 }
 
 #sponsorButton {
