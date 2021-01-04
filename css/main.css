@@ -1,3 +1,11 @@
+#getStarted .img-fluid, #schedule .img-fluid {
+    height: 160px;
+}
+
+#getStarted #small-mode {
+    height: 140px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -13,7 +21,6 @@ html, body {
 .jumbotron {
     background: none;
 }
-
 
 h4 {
     color: #4e4e4e;
@@ -103,7 +110,7 @@ a:hover {
     background-color: #3e973e;
 }
 
-#about, #info, #faq p {
+#jumbo, #info, #faq p {
     font-size: 1.25em;
 }
 
