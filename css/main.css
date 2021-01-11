@@ -1,173 +1,537 @@
-html {
-    scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald');
 
 html, body {
-    background: #fafafa;
-    background-image: url(../images/bg.png);
-    background-repeat: repeat-x;
+    background: #FFFAF3;
     width: 100%;
     height: 100%;
 }
 
-.jumbotron {
-    background: none;
-}
-
-
-h4 {
-    color: #4e4e4e;
-    text-align: center;
-}
-
-#info, #schedule, #categories, #faq, #sponsors {
-    margin-bottom: 5em;
-}
-
-#nav {
-    background-color: rgba(15, 181, 148,1);
-    padding: 0;
-}
-
-#nav a {
-    color: #f8f8ff;
-    padding: 5px 20px;
-    margin: 0;
-    font-size: 1.25em;
-}
-
-#nav a:hover {
-    color: #0fb595;
-    background-color: #ffffff;
-}
-
-.navbar-brand {
-    color: #f8f8ff;
-    font-weight: bold;
-}
-
-.navbar-brand:hover {
-    color: #c6f8c6;
+a {
+    color: #07B494;
 }
 
 a:hover {
-    color: #63bf63;
+    color: #28A745;
 }
 
-.fieldset {
-    border: 2px solid;
-    border-top: none;
-    border-color: #0fb595;
-    padding: 0.5em;
-    margin: 0em 2px;
+.day {
+    color: #FFFAF3;
 }
 
-.fieldset>h1 {
-    font: 1em normal;
-    margin: -1em -0.5em 0;
-    font-family: "Poppins", Helvetica, sans-serif;
-    color: #0fb595;
+@media (max-width: 483.98px) {
+    h1 {
+        font-size: 38px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+    .pathwaySign {
+        width: 275px;
+        height: 480px;
+    }
+
+    #scheduleHeader .col-auto:last-child {
+        display: none;
+    }
 }
 
-.fieldset>h1>span {
-    float: left;
+@media (min-width: 484px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .pathwaySign {
+        width: 320px;
+        height: 440px;
+    }
 }
 
-.fieldset>h1:before {
-    border-top: 2px solid;
-    border-color: #0fb595;
-    content: ' ';
-    float: left;
-    margin: 0.5em 2px 0 -1px;
-    width: 0.75em;
+@media (min-width: 484px) and (max-width: 575.98px) {
+    #scheduleHeader img {
+        width: 22.5vw;
+        height: auto;
+    }
+
+    #faq img {
+        width: 33vw;
+    }
+
+    #platinum img {
+        width: 33vw;
+    }
+    
+    #gold img {
+        width: 25vw;
+    }
+    
+    #silver img {
+        width: 22.5vw;
+    }
+    
+    #bronze img {
+        width: 22.5vw;
+    }
+    
+    #partners img {
+        width: 33vw;
+    }
 }
 
-.fieldset>h1:after {
-    border-top: 2px solid;
-    border-color: #0fb595;
-    content: ' ';
-    display: block;
-    height: 1.5em;
-    left: 2px;
-    margin: 0 1px 0 0;
-    overflow: hidden;
-    position: relative;
-    top: 0.5em;
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #faq img {
+        width: 256px;
+    }
+
+    #platinum img {
+        width: 25vw;
+    }
+    
+    #gold img {
+        width: 20vw;
+    }
+    
+    #silver img {
+        width: 18vw;
+    }
+    
+    #bronze img {
+        width: 18vw;
+    }
+    
+    #partners img {
+        width: 25vw;
+    }
 }
 
-#sponsorButton {
-    background-color: #63bf63;
+@media (max-width: 767.98px) {
+    #bronze {
+        margin-top: 1.8rem;
+    }
 }
 
-#sponsorButton:hover {
-    background-color: #3e973e;
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #faq img {
+        width: 200px;
+    }
+
+    #platinum img {
+        width: 18vw;
+    }
+    
+    #gold img {
+        width: 14vw;
+    }
+    
+    #silver img {
+        width: 12vw;
+    }
+    
+    #bronze img {
+        width: 12vw;
+    }
+    
+    #partners img {
+        width: 18vw;
+    }
 }
 
-#about, #info, #faq p {
-    font-size: 1.25em;
+@media (max-width: 991.98px) {
+    .desktop-only {
+        display: none;
+    }
+
+    #nav {
+        background-color: #FFFAF3;
+    }
+    
+    #nav .btn-outline-primary {
+        border-radius: 0px;
+        width: 100%;
+    }
+    
+    .jumbotron>div:first-child {
+        align-self: center;
+    }
+
+    #about img {
+        width: 200px;
+    }
+
+    #info {
+        background-image: url("../images/Website\ Design/Backgrounds/whatishackathon\ stars.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #info img {
+        width: 180px;
+        margin-bottom: 3rem;
+    }
+
+    .pathwaySign {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pathwaySign:first-of-type {
+        margin-bottom: 3rem;
+    }
+
+    .pathwaySign p {
+        font-size: 18px;
+    }
+
+    #scheduleHeader {
+        background-image: url("../images/Website\ Design/Backgrounds/schedule\ stars.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    #sponsorsHeader {
+        background-image: url("../images/Website\ Design/Backgrounds/sponsors\ stars.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #platinum .col {
+        display: none;
+    }
+
+    #gold .col {
+        display: none;
+    }
+
+    #partners .col {
+        display: none;
+    }
 }
 
-.btn-primary, .btn-primary a {
-    color: #f8f8ff;
-    font-size: 1.25em;
+@media (min-width: 992px) {
+    .mobile-only {
+        display: none;
+    }
+
+    #nav .btn-outline-primary {
+        border-radius: 10px;
+        width: 7em;
+    }
+
+    .jumbotron>div>div {
+        align-self: center;
+    }
+
+    #about p {
+        margin-left: 1em;
+    }
+
+    #about img {
+        width: 220px;
+    }
+
+    #info {
+        background-image: url("../images/Website\ Design/Backgrounds/whatishackathon\ stars.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #info img {
+        width: 256px;
+    }
+
+    .pathwaySign {
+        height: 400px;
+        width: 320px;
+    }
+
+    .pathwaySign:first-of-type {
+        margin-right: 1.2rem;
+    }
+
+    .pathwaySign:last-of-type {
+        margin-left: 1.2rem;
+    }
+
+    #scheduleHeader {
+        background-image: url("../images/Website\ Design/Backgrounds/schedule\ stars.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #scheduleHeader img:first-child {
+        margin-right: 5rem;
+    }
+
+    #scheduleHeader img:last-child {
+        margin-left: 5rem;
+    }
+
+    #sponsorsHeader {
+        padding-left: 5em;
+        padding-right: 5em;
+        background-image: url("../images/Website\ Design/Backgrounds/sponsors\ stars.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #faq .row:first-child {
+        padding-bottom: 1.8rem;
+    }
+
+    #platinum img {
+        width: 144px;
+    }
+    
+    #gold img {
+        width: 128px;
+    }
+    
+    #silver img {
+        width: 96px;
+    }
+    
+    #bronze img {
+        width: 96px;
+    }
+    
+    #partners img {
+        width: 164px;
+    }
+}
+
+#nav img {
+    height: 48px;
+}
+
+#nav .btn-outline-primary {
+    border: 2px solid #07B494;
+    background: #FFFAF3;
+}
+
+#nav .btn-outline-primary:hover {
+    background-color: #07B494;
+}
+
+#nav .btn-outline-primary a {
+    color: #07B494;
+}
+
+#nav .btn-outline-primary:hover a {
+    color: #FFFAF3;
+    text-decoration: none;
+}
+
+#jumbo .big-mode {
+    font-size: 4em;
+}
+
+#jumbo {
+    background-image: url("../images/Website\ Design/Backgrounds/HackOR background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FFFAF3;
+}
+
+#jumbo .jumbotron {
+    background: none;
+}
+
+#jumbo .btn-outline-primary {
+    border: 2px solid #273147;
+    border-radius: 10px;
+}
+
+#jumbo .btn-outline-primary:hover {
+    border-color: #07B494;
+    background-color: #07B494;
+}
+
+#jumbo .btn-outline-primary a {
+    color: #273147;
+}
+
+#jumbo .btn-outline-primary:hover a {
+    color: #FFFAF3;
+    text-decoration: none;
+}
+
+#info, #schedule, #sponsors {
+    background-color: #273147;
+}
+
+#getStarted .img-fluid, #schedule .img-fluid {
+    height: 140px;
+}
+
+#getStarted .small-mode {
+    height: 120px;
+}
+
+.pathwaySign {
+    background-color: #845c2c;
+    border-radius: 20px;
+    box-shadow: inset 6px -6px 0px 2px #60482e;
+    color: #FFFAF3;
+    text-align: center;
+}
+
+.pathwaySign i {
+    font-size: 2em;
+    color: #c69f75;
+}
+
+.pathwaySign h5 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    word-spacing: 8em;
+    letter-spacing: 0.1em;
+}
+
+.pathwaySign hr {
+    width: 70%;
+    border: 1px solid #c69f75;
+}
+
+.floater {
+    animation: floaty 10s ease-in-out infinite;
+}
+
+@keyframes floaty {
+    0%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.scheduleBoard {
+    background-color: #845c2c;
+    border-radius: 45px;
+    box-shadow: inset 6px -6px 0px 2px #60482e;
+    color: #FFFAF3;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 600px;
+}
+
+#schedule-accordion .card {
     border: none;
 }
 
-.btn-primary:hover {
-    background-color: #63bf63;
-    font-size: 1.25em;
-    border: none;
+#schedule-accordion .vl {
+    height: 520px;
+    border-left: 2px solid #c69f75;
 }
 
 #schedule-accordion .card-header {
-    background: #0FB595;
+    background: #845c2c;
+    text-align: center;
 }
 
 #schedule-accordion .card-header button {
-    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     font-size: 1em;
-    font-weight: bold;
+    color: #FFFAF3;
 }
 
-.card-header {
-    background: #f8f8ff;
+#schedule-accordion .card-body {
+    background: #845c2c;
 }
 
-.arrow {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
+#FAQHeader {
+    background-image: url("../images/Website\ Design/Assets/faq\ trees\ header.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.arrow span{
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid black;
-    border-right: 5px solid darkslategray;
-    transform: rotate(45deg);
-    margin: -20px;
-    animation: animate 3s infinite;
+#accordion .card, #accordion2 .card {
+    background-color: #FFFAF3;
+    border: 2px solid #07B494;
+    border-radius: 25px;
+    margin-bottom: 0.75em;
 }
 
-.arrow span:nth-child(2) {
-    animation-delay: -0.2s;
+#accordion .card-header, #accordion2 .card-header {
+    background: none;
+    border: none;
 }
 
-.arrow span:nth-child(3) {
-    animation-delay: -0.4s;
+#accordion .card-header button, #accordion2 .card-header button {
+    color: #273147;
+    text-align: left;
 }
 
-@keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
+#accordion .card-header button img, #accordion2 .card-header button img {
+    width: 24px;
+    margin-right: 0.5em;
+    float: left;
+}
+
+#accordion .card-header i, #accordion2 .card-header i {
+    color: #07B494;
+    float: right;
+}
+
+#dropdownMenuButton {
+    border: 2px solid #FFFAF3;
+    border-radius: 10px;
+}
+
+#dropdownMenuButton #timezone {
+    color: #FFFAF3;
+}
+
+.sponsorsSign {
+    background-color: #845c2c;
+    border-radius: 6px;
+    box-shadow: inset 3px -3px 0px 2px #60482e;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    word-spacing: 8em;
+    letter-spacing: 0.1em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+}
+
+#silver-bronze img {
+    width: 436px;
+}
+
+#footerHeader {
+    background: linear-gradient(to bottom, #273147 0%,#273147 60%,#273147 60%,#07B494 60%,#07B494 100%);
+}
+
+#footerHeader img {
+    width: 64px;
+}
+
+#footer {
+    background-color: #07B494;
+}
+
+#footer a {
+    color:#273147;
 }
