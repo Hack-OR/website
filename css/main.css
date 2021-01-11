@@ -529,6 +529,10 @@ a:hover {
     padding-right: 2.3em;
 }
 
+.organizer {
+    width: 100%;
+}
+
 #silver-bronze img {
     width: 436px;
 }
