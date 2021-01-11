@@ -516,6 +516,19 @@ a:hover {
     padding-right: 2.3em;
 }
 
+.organizerSign {
+    background-color: #845c2c;
+    border-radius: 6px;
+    box-shadow: inset 3px -3px 0px 2px #60482e;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+}
+
 #silver-bronze img {
     width: 436px;
 }
