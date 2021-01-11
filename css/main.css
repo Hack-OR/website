@@ -113,6 +113,10 @@ a:hover {
     #bronze {
         margin-top: 1.8rem;
     }
+
+    #team {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -529,10 +533,6 @@ a:hover {
     padding-right: 2.3em;
 }
 
-.organizer {
-    max-width: 100%;
-    display: block;
-}
 #silver-bronze img {
     width: 436px;
 }
