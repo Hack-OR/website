@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Oswald');
 
 html, body {
@@ -13,10 +12,6 @@ a {
 
 a:hover {
     color: #28A745;
-=======
-html {
-    scroll-behavior: smooth;
->>>>>>> 5b156c875128aa28af7e934d714767505d09ab03
 }
 
 .day {
@@ -42,7 +37,6 @@ html {
     }
 }
 
-<<<<<<< HEAD
 @media (min-width: 484px) and (max-width: 991.98px) {
     h1 {
         font-size: 56px;
@@ -56,12 +50,6 @@ html {
         width: 320px;
         height: 440px;
     }
-=======
-
-h4 {
-    color: #4e4e4e;
-    text-align: center;
->>>>>>> 5b156c875128aa28af7e934d714767505d09ab03
 }
 
 @media (min-width: 484px) and (max-width: 575.98px) {
@@ -329,12 +317,6 @@ h4 {
     background: #FFFAF3;
 }
 
-#nav img {
-    height: 48px;
-    -webkit-filter: drop-shadow(0px 0px 2px #273147);
-    filter:         drop-shadow(0px 0px 2px #273147);
-}
-
 #nav .btn-outline-primary:hover {
     background-color: #07B494;
 }
@@ -362,16 +344,6 @@ h4 {
 
 #jumbo .jumbotron {
     background: none;
-}
-
-<<<<<<< HEAD
-#jumbo img {
-    -webkit-filter: drop-shadow(0px 0px 3px gray);
-    filter:         drop-shadow(0px 0px 3px gray);
-=======
-#about, #info, #faq p {
-    font-size: 1.25em;
->>>>>>> 5b156c875128aa28af7e934d714767505d09ab03
 }
 
 #jumbo .btn-outline-primary {
