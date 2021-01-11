@@ -529,11 +529,10 @@ a:hover {
     padding-right: 2.3em;
 }
 
-#organizer {
+.organizer {
     max-width: 100%;
-    width: 1000px;
+    display: block;
 }
-
 #silver-bronze img {
     width: 436px;
 }
