@@ -529,8 +529,9 @@ a:hover {
     padding-right: 2.3em;
 }
 
-.organizer {
+#organizer {
     max-width: 100%;
+    width: 1000px;
 }
 
 #silver-bronze img {
