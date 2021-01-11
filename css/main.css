@@ -319,8 +319,6 @@ a:hover {
 
 #nav img {
     height: 48px;
-    -webkit-filter: drop-shadow(0px 0px 2px #273147);
-    filter:         drop-shadow(0px 0px 2px #273147);
 }
 
 #nav .btn-outline-primary:hover {
@@ -350,11 +348,6 @@ a:hover {
 
 #jumbo .jumbotron {
     background: none;
-}
-
-#jumbo img {
-    -webkit-filter: drop-shadow(0px 0px 3px gray);
-    filter:         drop-shadow(0px 0px 3px gray);
 }
 
 #jumbo .btn-outline-primary {
