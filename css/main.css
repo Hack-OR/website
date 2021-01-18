@@ -110,6 +110,14 @@ a:hover {
 }
 
 @media (max-width: 767.98px) {
+    #jumbo {
+        background-image: url("../images/Website\ Design/Mobile/mobile_HackOr\ background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #FFFAF3;
+    }
+
     #bronze {
         margin-top: 1.8rem;
     }
@@ -142,6 +150,15 @@ a:hover {
     
     #partners img {
         width: 18vw;
+    }
+}
+
+@media (min-width: 768px) {
+    #jumbo {
+        background-image: url("../images/Website\ Design/Backgrounds/HackOR background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #FFFAF3;
     }
 }
 
@@ -316,6 +333,18 @@ a:hover {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1919.98px) {
+    #jumbo {
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1920px) {
+    #jumbo {
+        background-size: 1920px 1088px;
+    }
+}
+
 #nav img {
     height: 48px;
 }
@@ -340,14 +369,6 @@ a:hover {
 
 #jumbo .big-mode {
     font-size: 4em;
-}
-
-#jumbo {
-    background-image: url("../images/Website\ Design/Backgrounds/HackOR background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #FFFAF3;
 }
 
 #jumbo .jumbotron {
