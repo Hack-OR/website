@@ -271,6 +271,12 @@ a:hover {
         height: 400px;
         width: 320px;
     }
+    
+    #bottomSign {
+        margin-top: 25px;
+        width: 710px;
+        height: 250px;
+    }
 
     .pathwaySign:first-of-type {
         margin-right: 1.2rem;
