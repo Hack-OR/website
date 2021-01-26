@@ -18,6 +18,12 @@ a:hover {
     color: #FFFAF3;
 }
 
+@media (min-width: 320px) and (max-width: 483.98px) {
+    #jumbo span {
+        margin-bottom: 1em;
+    }
+}
+
 @media (max-width: 483.98px) {
     h1 {
         font-size: 38px;
@@ -29,7 +35,7 @@ a:hover {
 
     .pathwaySign {
         width: 275px;
-        height: 480px;
+        height: 560px;
     }
 
     #scheduleHeader .col-auto:last-child {
@@ -46,9 +52,13 @@ a:hover {
         font-size: 20px;
     }
 
+    #jumbo .text-lg-left {
+        text-align: center;
+    }
+
     .pathwaySign {
         width: 320px;
-        height: 440px;
+        height: 510px;
     }
 }
 
@@ -268,14 +278,14 @@ a:hover {
     }
 
     .pathwaySign {
-        height: 400px;
+        height: 430px;
         width: 320px;
     }
     
     #bottomSign {
-        margin-top: 25px;
+        margin-top: 1.6rem;
         width: 710px;
-        height: 250px;
+        height: 290px;
     }
 
     .pathwaySign:first-of-type {
@@ -366,7 +376,6 @@ a:hover {
 
 #nav .btn-outline-primary:hover a {
     color: #FFFAF3;
-    text-decoration: none;
 }
 
 #jumbo .big-mode {
@@ -383,7 +392,6 @@ a:hover {
 }
 
 #jumbo .btn-outline-primary:hover {
-    border-color: #07B494;
     background-color: #07B494;
 }
 
@@ -393,7 +401,6 @@ a:hover {
 
 #jumbo .btn-outline-primary:hover a {
     color: #FFFAF3;
-    text-decoration: none;
 }
 
 #info, #schedule, #sponsors {
@@ -431,6 +438,20 @@ a:hover {
 .pathwaySign hr {
     width: 70%;
     border: 1px solid #c69f75;
+}
+
+.pathwaySign .btn-outline-primary {
+    border: 2px solid #c69f75;
+    background-color: #c69f75;
+    border-radius: 15px;
+}
+
+.pathwaySign .btn-outline-primary:hover {
+    background-color: #07B494;
+}
+
+.pathwaySign .btn-outline-primary a {
+    color: #273147;
 }
 
 .floater {
