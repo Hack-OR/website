@@ -286,7 +286,8 @@
             <img data-aos="fade" class="img-fluid" src="images/Website Design/Mobile/mobile_schedule icons.png" alt="map and compass">
           </div>
         </div>
-        <div data-aos="fade-up" class="row scheduleBoard" id="schedule-accordion">
+        <!--This is so sus lmao-->
+        <div data-aos="fade-up" class="row scheduleBoard d-sm-none" id="schedule-accordion">
           <div class="col-lg">
             <div class="card mt-3">
               <div class="card-header" id="friday">
@@ -295,7 +296,7 @@
                     FRIDAY, MARCH 26</button>
                 </h5>
               </div>
-              <div id="fridayCollapse" class="collapse" aria-labelledby="friday" data-parent="#schedule-accordion">
+              <div id="fridayCollapse" class="collapse show" aria-labelledby="friday" data-parent="#schedule-accordion">
                 <div class="card-body">
                   <p>
                     Detailed Events, Panels, and Workshops Coming Soon! 
@@ -355,6 +356,76 @@
             </div>
           </div>
         </div>
+        <!--I basically copied it again so the accordion expands friday on mobile but its not an accordion on desktop-->
+        <div data-aos="fade-up" class="row scheduleBoard d-none d-sm-flex" id="schedule-accordion">
+          <div class="col-lg">
+            <div class="card mt-3">
+              <div class="card-header" id="friday">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#fridayCollapse" aria-expanded="false" aria-controls="fridayCollapse">
+                    FRIDAY, MARCH 26</button>
+                </h5>
+              </div>
+              <div class="collapse show" aria-labelledby="friday" data-parent="#schedule-accordion">
+                <div class="card-body">
+                  <p>
+                    Detailed Events, Panels, and Workshops Coming Soon! 
+                    Keep an eye out for our reveal on our <a style="color:#c69f75" href="#footer">social media</a>.
+                  </p>
+                  <br/>
+                  <li>10:00AM | Opening Ceremony</li>
+                  <li>11:00AM | Team Building, GatherTown Opens</li>
+                  <li>2:00PM | Hacking Starts</li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vl align-self-center desktop-only"></div>
+          <div class="col-lg">
+            <div class="card mt-3">
+              <div class="card-header" id="saturday">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#saturdayCollapse" aria-expanded="false" aria-controls="saturdayCollapse">
+                    SATURDAY, MARCH 27</button>
+                </h5>
+              </div>
+              <div class="collapse show" aria-labelledby="saturday" data-parent="#schedule-accordion">
+                <div class="card-body">
+                  <p>
+                    Detailed Events, Panels, and Workshops Coming Soon! 
+                    Keep an eye out for our reveal on our <a style="color:#c69f75" href="#footer">social media</a>.
+                  </p>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vl align-self-center desktop-only"></div>
+          <div class="col-lg">
+            <div class="card mt-3">
+              <div class="card-header" id="sunday">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#sundayCollapse" aria-expanded="false" aria-controls="sundayCollapse">
+                    SUNDAY, MARCH 28</button>
+                </h5>
+              </div>
+              <div class="collapse show" aria-labelledby="sunday" data-parent="#schedule-accordion">
+                <div class="card-body">
+                  <div class="card-body">
+                    <p>
+                      Detailed Events, Panels, and Workshops Coming Soon! 
+                      Keep an eye out for our reveal on our <a style="color:#c69f75" href="#footer">social media</a>.
+                    </p>
+                    <br/>
+                    <li>2:00PM | Hacking Ends</li>
+                    <li>2:00 - 5:00PM | Judging</li>
+                    <li>7:00PM | Closing Ceremony</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row mt-2">
           <div class="col my-auto">
             <button class="btn btn-outline-primary dropdown-toggle float-right my-auto" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -366,6 +437,15 @@
               <a class="dropdown-item">Eastern Daylight Time (GMT -04:00)</a>
             </div>
           </div>
+        </div>
+        <br/>
+        <div class="col-auto align-self-center">
+          <h1 class="day text-center"><b>Workshops at HackOR</b></h1>
+          <p class="day text-center">While we are still finalizing the
+             schedule and <a href="https://forms.gle/BrQ2MMNiDNfDj3vu8">on the lookout
+             for workshop leads</a>, here are some workshops we have finalized:
+          </p>
+          <img data-aos="zoom-in" class="img wordcloud" src="images/workshops.png" alt="Workshops Wordcloud">
         </div>
       </div>
     </div>
