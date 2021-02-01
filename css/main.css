@@ -591,6 +591,12 @@ a:hover {
     width: 436px;
 }
 
+.wordcloud {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
 #footerHeader {
     background: linear-gradient(to bottom, #273147 0%,#273147 60%,#273147 60%,#07B494 60%,#07B494 100%);
 }
