@@ -189,11 +189,13 @@ a:hover {
 
     #nav {
         background-color: #FFFAF3;
+        box-shadow: 0px 0px 8px #273147;
     }
     
     #nav .btn-outline-primary {
         border-radius: 0px;
         width: 100%;
+        border: none;
     }
     
     .jumbotron>div:first-child {
@@ -263,9 +265,14 @@ a:hover {
         display: none;
     }
 
+    #nav .nav-item {
+        margin-right: 2rem;
+    }
+
     #nav .btn-outline-primary {
         border-radius: 10px;
         width: 7em;
+        border: 2px solid #07B494;
     }
 
     .jumbotron>div>div {
@@ -373,22 +380,16 @@ a:hover {
 
 #nav img {
     height: 48px;
+    filter: drop-shadow(0px 0px 1px green);
 }
 
 #nav .btn-outline-primary {
-    border: 2px solid #07B494;
     background: #FFFAF3;
+    color: #07B494;
 }
 
 #nav .btn-outline-primary:hover {
     background-color: #07B494;
-}
-
-#nav .btn-outline-primary a {
-    color: #07B494;
-}
-
-#nav .btn-outline-primary:hover a {
     color: #FFFAF3;
 }
 
@@ -404,17 +405,11 @@ a:hover {
     border: 2px solid #273147;
     border-radius: 10px;
     width: 10em;
-}
-
-#jumbo .btn-outline-primary:hover {
-    background-color: #07B494;
-}
-
-#jumbo .btn-outline-primary a {
     color: #273147;
 }
 
-#jumbo .btn-outline-primary:hover a {
+#jumbo .btn-outline-primary:hover, .pathwaySign .btn-outline-primary:hover {
+    background-color: #07B494;
     color: #FFFAF3;
 }
 
@@ -459,14 +454,12 @@ a:hover {
     border: 2px solid #c69f75;
     background-color: #c69f75;
     border-radius: 15px;
-}
-
-.pathwaySign .btn-outline-primary:hover {
-    background-color: #07B494;
-}
-
-.pathwaySign .btn-outline-primary a {
     color: #273147;
+    width: 10em;
+}
+
+.pathwaySign .btn-outline-primary:last-of-type {
+    width: fit-content !important;
 }
 
 .floater {
@@ -492,7 +485,7 @@ a:hover {
     color: #FFFAF3;
     padding-left: 1em;
     padding-right: 1em;
-    height: 600px;
+    height: 720px;
 }
 
 
@@ -508,7 +501,7 @@ a:hover {
 #schedule-accordion .card-header {
     background: #88602f;
     text-align: center;
-    box-shadow: 3px 5px #704d22;
+    box-shadow: 0px 5px #60482e;
 }
 
 #schedule-accordion .card-header button {
