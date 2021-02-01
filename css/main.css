@@ -393,6 +393,9 @@ a:hover {
     color: #FFFAF3;
 }
 
+#logo {
+    width: 200px;
+}
 #jumbo .big-mode {
     font-size: 4em;
 }
