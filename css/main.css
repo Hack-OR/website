@@ -516,6 +516,23 @@ a:hover {
     background: #845c2c;
 }
 
+#schedule-accordion .card-body a {
+    color: #273147;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#schedule-accordion .card-body a:hover {
+    color: darkslategray;
+}
+
+#schedule-accordion .card-body ul {
+    list-style-type: none;
+    line-height: 1.75em;
+    margin: 0;
+    padding: 0;
+}
+
 #FAQHeader {
     background-image: url("../images/Website\ Design/Assets/faq\ trees\ header.png");
     background-position: center;
