@@ -240,6 +240,10 @@ a:hover {
         padding-bottom: 2rem;
     }
 
+    .scheduleBoard {
+        height: 920px !important;
+     }
+
     #sponsorsHeader {
         background-image: url("../images/Website\ Design/Backgrounds/sponsors\ stars.png");
         background-position: center;
