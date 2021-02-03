@@ -23,12 +23,6 @@ a:hover {
         1px 1px 0 #273147;
 }
 
-@media (min-width: 320px) and (max-width: 483.98px) {    
-    #jumbo span {
-        margin-bottom: 1em;
-    }
-}
-
 @media (max-width: 483.98px) {
     .mobile-plus-only {
         display: none;
