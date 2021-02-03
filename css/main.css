@@ -16,6 +16,11 @@ a:hover {
 
 .day {
     color: #FFFAF3;
+    text-shadow:
+        -1px -1px 0 #273147,  
+        1px -1px 0 #273147,
+        -1px 1px 0 #273147,
+        1px 1px 0 #273147;
 }
 
 @media (min-width: 320px) and (max-width: 483.98px) {    
@@ -42,8 +47,7 @@ a:hover {
     }
 
     .pathwaySign {
-        width: 275px;
-        height: 560px;
+        width: 250px;
     }
 
     #scheduleHeader .col-auto:last-child {
@@ -72,7 +76,6 @@ a:hover {
 
     .pathwaySign {
         width: 320px;
-        height: 510px;
     }
 }
 
@@ -240,10 +243,6 @@ a:hover {
         padding-bottom: 2rem;
     }
 
-    .scheduleBoard {
-        height: 920px !important;
-     }
-
     #sponsorsHeader {
         background-image: url("../images/Website\ Design/Backgrounds/sponsors\ stars.png");
         background-position: center;
@@ -303,14 +302,14 @@ a:hover {
     }
 
     .pathwaySign {
-        height: 430px;
         width: 320px;
     }
     
     #bottomSign {
         margin-top: 1.6rem;
         width: 710px;
-        height: 290px;
+        height: max-content;
+        padding-bottom: 2em;
     }
 
     .pathwaySign:first-of-type {
@@ -400,6 +399,7 @@ a:hover {
 #logo {
     width: 200px;
 }
+
 #jumbo .big-mode {
     font-size: 4em;
 }
@@ -438,6 +438,8 @@ a:hover {
     box-shadow: inset 6px -6px 0px 2px #60482e;
     color: #FFFAF3;
     text-align: center;
+    height: max-content;
+    padding-bottom: 2em;
 }
 
 .pathwaySign i {
@@ -492,9 +494,9 @@ a:hover {
     color: #FFFAF3;
     padding-left: 1em;
     padding-right: 1em;
-    height: 720px;
+    height: max-content;
+    padding-bottom: 2em;
 }
-
 
 #schedule-accordion .card {
     border: none;
@@ -590,20 +592,7 @@ a:hover {
     box-shadow: inset 3px -3px 0px 2px #60482e;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    word-spacing: 8em;
-    letter-spacing: 0.1em;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
-    padding-left: 2.3em;
-    padding-right: 2.3em;
-}
-
-.organizerSign {
-    background-color: #845c2c;
-    border-radius: 6px;
-    box-shadow: inset 3px -3px 0px 2px #60482e;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
+    text-shadow: none !important;
     letter-spacing: 0.1em;
     padding-top: 0.75em;
     padding-bottom: 0.75em;
@@ -621,6 +610,7 @@ a:hover {
     margin: 0 auto;
     display: block;
 }
+
 #footerHeader {
     background: linear-gradient(to bottom, #273147 0%,#273147 60%,#273147 60%,#07B494 60%,#07B494 100%);
 }
@@ -633,6 +623,14 @@ a:hover {
     background-color: #07B494;
 }
 
+#footer .day {
+    text-shadow: none !important;
+}
+
 #footer a {
-    color:#273147;
+    color: #273147;
+}
+
+#footer a:hover {
+    color: darkslategray;
 }
