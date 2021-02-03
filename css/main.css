@@ -41,10 +41,14 @@ a:hover {
     }
 
     .pathwaySign {
-        width: 250px;
+        width: 80vw;
     }
 
     #scheduleHeader .col-auto:last-child {
+        display: none;
+    }
+
+    #faq .mobile-only {
         display: none;
     }
 }
@@ -69,7 +73,7 @@ a:hover {
     }
 
     .pathwaySign {
-        width: 320px;
+        width: 400px;
     }
 }
 
@@ -218,9 +222,6 @@ a:hover {
     .pathwaySign {
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .pathwaySign:first-of-type {
         margin-bottom: 3rem;
     }
 
