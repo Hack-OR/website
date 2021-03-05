@@ -606,6 +606,41 @@ a:hover {
     display: block;
 }
 
+.board {
+    width: 95%;
+    border: 15px;
+    border-top-color: #af824a;
+    border-left-color: #c69f75;
+    border-bottom-color: #88602f;
+    border-right-color: #694D35;
+    border-style: inset;
+    border-radius: 15px;
+    background-color: #A27D50;
+    box-shadow: -5px 5px #60482e;
+    outline: 3px solid #694D35;
+    outline-offset: -15px;
+}
+
+.board .organizer {
+    width: 275px;
+    background-color: #FFF7F0;
+    padding: 15px;
+    margin: 25px; 
+}
+
+.board .organizer p {
+    font-size: 18px;
+    color: #2F8680;
+    margin: auto;
+}
+
+.pin {
+    width: 25px;
+    position: absolute;
+    top:-10px;
+    left: calc(50% - 12.5px);
+}
+
 #footerHeader {
     background: linear-gradient(to bottom, #273147 0%,#273147 60%,#273147 60%,#07B494 60%,#07B494 100%);
 }
