@@ -36,6 +36,10 @@ a:hover {
         font-size: 16px;
     }
 
+    #gold {
+       display: none;
+    }
+
     #jumbo .btn-outline-primary {
         width: 14em !important;
     }
@@ -49,6 +53,13 @@ a:hover {
     }
 
     #faq .mobile-only {
+        display: none;
+    }
+
+    #accordion img {
+        display: none;
+    }
+    #accordion2 img {
         display: none;
     }
 }
@@ -554,6 +565,12 @@ a:hover {
 #accordion .card-header, #accordion2 .card-header {
     background: none;
     border: none;
+}
+
+#accordion .card-header i {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
 }
 
 #accordion .card-header button, #accordion2 .card-header button {
