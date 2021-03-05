@@ -607,7 +607,7 @@ a:hover {
 }
 
 .board {
-    width: 95%;
+    width: 80%;
     border: 15px;
     border-top-color: #af824a;
     border-left-color: #c69f75;
@@ -622,10 +622,11 @@ a:hover {
 }
 
 .board .organizer {
-    width: 275px;
+    width: 225px;
     background-color: #FFF7F0;
     padding: 15px;
     margin: 25px; 
+    box-shadow: 3px 5px 5px rgba(96,72,46, 0.25);
 }
 
 .board .organizer p {
