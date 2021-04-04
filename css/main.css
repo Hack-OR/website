@@ -311,7 +311,12 @@ a:hover {
         width: 320px;
     }
     
-    #bottomSign {
+    .pathwaySign a {
+        color: #FFF7F0;
+        font-weight: bold;
+    }
+
+    .bottomSign {
         margin-top: 1.6rem;
         width: 710px;
         height: max-content;
